@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: #5E17EB;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../img/background.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    background-size: cover;
+
+}
+
+.card-cadastro {
+    width: 350px;
+    height: 380px;
+    background-color: #5E17EB;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    box-shadow: 2px 5px 13px 1px #000;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 40px;
+
+}
+
+.btn-cadastro {
+    background-color: white;
+    width: 200px;
+    height: 35px;
+    color: #5E17EB;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 20px;
+    transition: all 0.5s;
+    cursor: pointer;
+
+}
+
+.btn-cadastro:hover{
+    transform: scale(1.1);
+    font-weight: bold;
+}
+
+span{
+    margin-top: 5%;
+    font-weight: bold;
+    color: antiquewhite;
+    font-size: 15px;
+    text-decoration: underline;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+span:hover{
+    font-size: 15px;
+    color: #5CE1E6;
+    font-weight: bold;
+}
