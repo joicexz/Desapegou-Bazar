@@ -1,1 +1,8 @@
-[{"email":"joicesoaresalmeida@gmail.com","senha":"4321","CEP":"0123654","telefone":"40028922"},{"email":"joicepeidorreira@gmail.com","senha":"12345t67","CEP":"12345678445","telefone":"11997336283"},{"email":"agrvaicarai@gmail.com","senha":"oxxe","CEP":"456","telefone":"789"}]
+[
+    {
+        "email": "joicesoaresalmeida@gmail.com",
+        "senha": "4321",
+        "CEP": "0123654",
+        "telefone": "40028922"
+    }
+]

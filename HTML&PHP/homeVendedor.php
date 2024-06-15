@@ -10,7 +10,6 @@
 </head>
 
 <body>
-
     <nav>
         <div class="logo">
             <img src="../img/logo-estendida.png" alt="" class="img-logo">
@@ -18,15 +17,24 @@
 
         <div class="menu">
 
-            <span onclick="window.location.href='produtosVendedor.php'">Produtos</span>
-            <!-- <span onclick="window.location.href='sacola.php'">sua sacola</span> -->
+            <span onclick="window.location.href='homeVendedor.php'">Produtos</span>
             <span onclick="window.location.href='perfilVendedor.php'">seu perfil</span>
         </div>
     </nav>
 
     <div class="feed">
-        <h1>FEED</h1>
-    </div>
+        <div class="title">
+            <!-- <h1>Seus Produtos</h1> -->
+             <h1>Essa pag ta dando problema, nao faz nenhuma alteração nela plis</h1>
+        </div>
+
+        <div class="produtos">
+            <!-- <h1>PRODUTOS</h1> -->
+        </div>
+
+        <div class="btn-add">
+            <!-- <H1>BOTAO VEI </H1> -->
+        </div>
 
 </body>
 

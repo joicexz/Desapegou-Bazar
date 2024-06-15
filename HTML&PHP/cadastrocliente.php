@@ -28,7 +28,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         }
 
         $dados[] = $novo_registro;
-        file_put_contents($arquivo, json_encode($dados));
+        file_put_contents($arquivo, json_encode($dados, JSON_PRETTY_PRINT));
 
         $url = 'homeCliente.php';
         echo "<script type='text/javascript'>

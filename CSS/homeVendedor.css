@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
 * {
     margin: 0;
     padding: 0;
@@ -69,12 +71,6 @@ span:hover {
     border-radius: 15px;
 }
 
-/* hr {
-    width: 100%;
-    height: 1px;
-    background-color: #545454;
-} */
-
 .feed {
     grid-area: feed;
     width: 100%;
@@ -83,4 +79,28 @@ span:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    background-color: red;
+    display: grid;
+    grid-template-areas:
+        "title title"
+        "produtos"
+        "btn-add";
+    grid-template-rows: 180px 1fr 180px;
+}
+
+.title {
+    grid-area: title;
+    color: #5E17EB;
+    font-family: "Poppins", sans-serif;
+}
+
+.produtos {
+    grid-area: produtos;
+    background-color: red;
+}
+
+.btn-add {
+    grid-area: btn-add;
+    background-color: blue;
 }
