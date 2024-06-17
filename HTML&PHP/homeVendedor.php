@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/homeVendedor.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="icon" href="../img/logo-icon.png">
     <title>Produtos cadastrados</title>
 </head>
@@ -28,6 +29,7 @@
         </div>
 
         <div class="produtos">
+        <i class='bx bx-pencil'></i>
         </div>
 
         <div class="btn">
