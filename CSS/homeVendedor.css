@@ -13,6 +13,7 @@ body {
     grid-template-areas: "nav" "feed";
     grid-template-rows: 120px 1fr;
     display: grid;
+    font-family: "Poppins", sans-serif;
 }
 
 nav {
@@ -79,28 +80,55 @@ span:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    background-color: red;
+    /* flex-direction: column; */
+    /* background-color: red; */
     display: grid;
-    grid-template-areas:
-        "title title"
-        "produtos"
-        "btn-add";
+    grid-template-areas:"title" "produtos" "btn";
     grid-template-rows: 180px 1fr 180px;
 }
 
 .title {
     grid-area: title;
+    width: 100vw;
+    height: 100%;
     color: #5E17EB;
     font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    /* background-color: red; */
 }
 
 .produtos {
     grid-area: produtos;
-    background-color: red;
+    width: 100vw;
+    height: 100%;
+    /* background-color: green; */
 }
 
-.btn-add {
-    grid-area: btn-add;
-    background-color: blue;
+.btn {
+    grid-area: btn;
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-add{
+    background-color: #5E17EB;
+    width: 150px;
+    height: 50px;
+    color: white;
+    font-size: 25px;
+    border: none;
+    border-radius: 15px;
+    font-family: "Poppins", sans-serif;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.btn-add:hover{
+    transform: scale(1.1);
 }

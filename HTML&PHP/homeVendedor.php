@@ -24,16 +24,14 @@
 
     <div class="feed">
         <div class="title">
-            <!-- <h1>Seus Produtos</h1> -->
-             <h1>Essa pag ta dando problema, nao faz nenhuma alteração nela plis</h1>
+            <h1>Seus produtos:</h1>
         </div>
 
         <div class="produtos">
-            <!-- <h1>PRODUTOS</h1> -->
         </div>
 
-        <div class="btn-add">
-            <!-- <H1>BOTAO VEI </H1> -->
+        <div class="btn">
+            <button class="btn-add">Adicionar</button>
         </div>
 
 </body>
