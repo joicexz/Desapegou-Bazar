@@ -34,27 +34,28 @@
         </div>
 
         <div class="produtos">
-            <div class="btn">
-                <button type="button" class="btn-add" onclick="mostrarFormulario()">Adicionar</button>
-            </div>
 
+            <!-- BOTAO ADD-->
+
+
+            <!-- FORM ADD -->
             <div id="formNovoProduto" class="overlay">
                 <div class="modal">
                     <span class="fechar" onclick="fecharFormulario()">&times;</span>
                     <form action="salvaProduto.php" method="post">
                         <div>
                             <label for="produto">Produto:</label>
-                            <input type="text" name="produto" id="produto">
+                            <input type="text" name="produto" id="produto" required>
                         </div>
 
                         <div>
                             <label for="descricao">Descrição:</label>
-                            <textarea id="descricao" name="descricao"></textarea>
+                            <textarea id="descricao" name="descricao" required></textarea>
                         </div>
 
                         <div>
                             <label for="preco">Preço:</label>
-                            <input type="number" name="preco" id="preco">
+                            <input type="number" name="preco" id="preco" step="0.01" required>
                         </div>
 
                         <div>
@@ -64,43 +65,53 @@
                 </div>
             </div>
 
+            <div class="btn">
+                <button type="button" class="btn-add" onclick="mostrarFormulario()">Adicionar</button>
+            </div>
+
             <?php
             $arquivo = 'produtos.json';
             $extrair_dados = file_get_contents($arquivo);
 
             $dados = json_decode($extrair_dados, true);
             ?>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Produto</th>
-                        <th>Descrição</th>
-                        <th>Preço</th>
-                    </tr>
-                </thead>
-
-                <tbody>
-                    <?php
-                    foreach ($dados as $id => $valor) {
-                    ?>
+            <div class="tbl">
+                <table>
+                    <thead>
                         <tr>
-                            <!-- <td><?= $id ?></td> -->
-                            <td><?= $valor['produto'] ?></td>
-                            <td><?= $valor['descricao'] ?></td>
-                            <td><?= $valor['preco'] ?></td>
-                            <td>
-                                <a href="editarProduto.php?id=<?= $id ?>"><i class='bx bxs-pencil' style='color:#5e17eb'></i></a>
-                                <a href="apagarProduto.php?id=<?= $id ?>"><i class='bx bx-trash-alt'></i></a>
-                            </td>
+                            <th>Produto</th>
+                            <th>Descrição</th>
+                            <th>Preço (R$)</th>
                         </tr>
-                    <?php
-                    }
-                    ?>
-                </tbody>
-            </table>
-        </div>
+                    </thead>
 
-        <script src="../JS/homeVendedor.js"></script>
+                    <tbody>
+                        <?php
+                        foreach ($dados as $id => $valor) {
+                            ?>
+                            <tr>
+                                <!-- <td><?= $id ?></td> -->
+                                <td><?= $valor['produto'] ?></td>
+                                <td><?= $valor['descricao'] ?></td>
+                                <td><?= $valor['preco'] ?></td>
+                                <td>
+                                    <a href="editarProduto.php?id=<?= $id ?>"><i class='bx bxs-pencil' style='color:#5e17eb'
+                                            alt="Editar"></i></a>
+
+                                    <a href="apagarProduto.php?id=<?= $id ?>"><i class='bx bx-trash-alt'
+                                            alt="Apagar"></i></a>
+                                </td>
+                            </tr>
+                            <?php
+                        }
+                        ?>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="../JS/homeVendedor.js"></script>
 </body>
 
 </html>

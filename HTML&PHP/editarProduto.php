@@ -29,17 +29,17 @@
     <form action="alteraProduto.php?id=<?= $id ?>" method="post">
         <div>
             <label for="produto">Produto: </label>
-            <input type="text" name="produto" id="produto" value="<?= $dados[$id]['produto'] ?>">
+            <input type="text" name="produto" id="produto" value="<?= $dados[$id]['produto'] ?>" required>
         </div>
 
         <div>
             <label for="descricao">Descrição:</label>
-            <textarea id="descricao" name="descricao" value="<?= $dados[$id]['email'] ?>"></textarea>
+            <textarea id="descricao" name="descricao" value="<?= $dados[$id]['email'] ?>"></textarea required>
         </div>
 
         <div>
             <label for="preco">Preço: </label>
-            <input type="number" name="preco" id="preco" value="<?= $dados[$id]['preco'] ?>">
+            <input type="number" name="preco" id="preco" value="<?= $dados[$id]['preco'] ?>" required>
         </div>
 
         <div>
