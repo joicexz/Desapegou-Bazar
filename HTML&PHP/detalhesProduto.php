@@ -24,6 +24,7 @@
 
     <div class="card-produto">
         <?php
+        session_start();
         if (isset($_GET['id_produto'])) {
             $id_produto = $_GET['id_produto'];
             $dados = 'produtosCliente.json';
@@ -69,7 +70,8 @@
                             <p class="rest">Estampa: <?php echo htmlspecialchars($produto_encontrado['estampa']); ?></p>
 
                             <div>
-                                <button class="btn-sacolaAdd" onclick="window.location.href='sacola.php'">adicionar a sacola</button>
+
+                                <button class="btn-sacolaAdd" onclick="adicionarASacola(<?php echo $produto_encontrado['id']; ?>)">adicionar a sacola</button>
                             </div>
 
                         </div>
@@ -85,6 +87,28 @@
             echo '<p>Parâmetro id_produto não encontrado na URL.</p>';
         }
         ?>
+
+        <script>
+            function adicionarASacola(idProduto) {
+                fetch('adicionar_sacola.php', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({
+                            id_produto: idProduto
+                        })
+                    }).then(response => response.json())
+                    .then(data => {
+                        if (data.success) {
+                            window.location.href = 'sacola.php';
+                        } else {
+                            alert('Erro ao adicionar à sacola');
+                        }
+                    });
+            }
+        </script>
+
     </div>
 </body>
 

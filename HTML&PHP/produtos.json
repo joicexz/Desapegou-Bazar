@@ -1,1 +1,7 @@
-[{"produto":"meia socket","descricao":"cor cinza","preco":"5.36"}]
+[
+    {
+        "produto": "cal\u00e7a jeans",
+        "descricao": "rasgada no joelho",
+        "preco": "85"
+    }
+]

@@ -18,7 +18,7 @@
 
         <button class="btn-cadastro" id="btn-cadastro-vender" onclick="window.location.href='vendedor.php'">Quero vender</button>
 
-        <span>Já possui conta? Entrar</span>
+        <span onclick="window.location.href='login.php'">Já possui conta? Entrar</span>
 
     </div>
 

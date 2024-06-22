@@ -14,5 +14,13 @@
         "senha": "21051",
         "CEP": "06695480",
         "telefone": "11917532483"
+    },
+    {
+        "nome": "joice",
+        "email": "julia@gmail.com",
+        "CNPJ": "020202020",
+        "senha": "123",
+        "CEP": "06695480",
+        "telefone": "11917532483"
     }
 ]
