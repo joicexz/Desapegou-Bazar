@@ -1,0 +1,118 @@
+{
+    "produtos": [
+        {
+            "id": 0,
+            "img_url": "../img/product1.jpg",
+            "nameProduto": "Calça cinza",
+            "preco": "79,90",
+            "estado": "usado",
+            "cor": "preta, bege",
+            "tamanho": "P,M",
+            "estacao": "outono/inverno",
+            "estampa": "liso / sem estampa"
+        },
+        {
+            "id": 1,
+            "img_url": "../img/product2.jpg",
+            "nameProduto": "Blusa branca",
+            "preco": "69,90",
+            "estado": "Nova",
+            "cor": "preta",
+            "tamanho": "P,M",
+            "estacao": "outono/verão",
+            "estampa": "liso / sem estampa"
+        },
+        {
+            "id": 2,
+            "img_url": "../img/product3.jpg",
+            "nameProduto": "Regata",
+            "preco": "30,00",
+            "estado": "Excelente",
+            "cor": "Branca",
+            "tamanho": "P, M",
+            "estacao": "verão",
+            "estampa": "floral"
+        },
+        {
+            "id": 3,
+            "img_url": "../img/product4.jpg",
+            "nameProduto": "saia jeans",
+            "preco": "49,00",
+            "estado": "Usada",
+            "cor": "preta",
+            "tamanho": "P",
+            "estacao": "verão",
+            "estampa": "liso / sem estampa"
+        }
+    ],
+    "produtos2": [
+        {
+            "id": 4,
+            "img_url": "../img/product5.jpg",
+            "nameProduto": "Camisa",
+            "preco": "10,00",
+            "estado": "Semi-nova",
+            "cor": "colorida",
+            "tamanho": "Tamanho único (M)",
+            "estacao": "verão",
+            "estampa": "estilo tie dye"
+        },
+        {
+            "id": 5,
+            "img_url": "../img/product6.jpg",
+            "nameProduto": "Blusa social",
+            "preco": "17,90",
+            "estado": "usado",
+            "cor": "rosa bebe",
+            "tamanho": "Tamanho único (M)",
+            "estacao": "verão/primavera",
+            "estampa": "liso / sem estampa"
+        }
+    ],
+    "produtos3":[
+        {
+            "id": 6,
+            "img_url": "../img/junino1.png",
+            "nameProduto": "vestido junino",
+            "preco": "120,50",
+            "estado": "novo",
+            "cor": "colorido (vermelho, amarelo e verde)",
+            "tamanho": "P, M, G",
+            "estacao": "festa junina",
+            "estampa": "floral / junino"
+        },
+        {
+            "id": 7,
+            "img_url": "../img/junino2.png",
+            "nameProduto": "saia",
+            "preco": "88,25",
+            "estado": "semi-nova",
+            "cor": "preta",
+            "tamanho": "P, M",
+            "estacao": "variado",
+            "estampa": "liso / sem estampa"
+        },
+        {
+            "id": 8,
+            "img_url": "../img/junino3.png",
+            "nameProduto": "botas",
+            "preco": "60,00",
+            "estado": "usada",
+            "cor": "marrom escura",
+            "tamanho": "35/36 , 37/38",
+            "estacao": "variado",
+            "estampa": "liso / sem estampa"
+        },
+        {
+            "id": 9,
+            "img_url": "../img/junino4.png",
+            "nameProduto": "cinto",
+            "preco": "75,20",
+            "estado": "novo",
+            "cor": "preta",
+            "tamanho": "P, M",
+            "estacao": "variado",
+            "estampa": "liso / sem estampa"
+        }
+    ]
+}

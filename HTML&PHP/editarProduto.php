@@ -34,7 +34,7 @@
 
         <div>
             <label for="descricao">Descrição:</label>
-            <textarea id="descricao" name="descricao" value="<?= $dados[$id]['email'] ?>"></textarea required>
+            <textarea id="descricao" name="descricao" value="<?= $dados[$id]['descricao'] ?>"></textarea required>
         </div>
 
         <div>

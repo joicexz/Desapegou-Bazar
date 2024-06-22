@@ -10,8 +10,8 @@ body {
   width: 100vw;
   height: 100vh;
   overflow-x: hidden;
-  grid-template-areas: "nav" "carrossel" "produtos";
-  grid-template-rows: 120px 500px 1fr;
+  grid-template-areas: "nav" "carrossel";
+  grid-template-rows: 120px 500px;
   display: grid;
 }
 
@@ -170,13 +170,87 @@ span:hover {
   background-color: #5E17EB;
 }
 
-
-
-.produtos {
+/* .produtos {
   grid-area: produtos;
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+} */
+
+
+.fil1-container{
+  font-family: "Poppins", sans-serif;
+  margin: 90px auto;
+}
+
+i{
+  color: #5E17EB;
+}
+
+.section-title{
+  font-style: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.rem;
+}
+
+.fil1-content{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px,auto));
+}
+
+.product-box{
+    margin: 10px; 
+    transition: 0.3s;
+}
+
+.product-box img {
+  width: 100%; 
+  height: auto; 
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.product-box:hover{
+    transform: scale(1.05);
+}
+
+.fil2-container{
+  font-family: "Poppins", sans-serif;
+  margin: 90px auto;
+}
+
+.section-title{
+  font-style: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.rem;
+}
+
+.fil2-content{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px,auto));
+}
+
+.fil4-container{
+  font-family: "Poppins", sans-serif;
+  margin: 90px auto;
+}
+
+.section-title{
+  font-style: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.rem;
+}
+
+.fil4-content{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px,auto));
+}
+
+.product-name{
+  font-style: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.rem;
+  text-align: center;
 }

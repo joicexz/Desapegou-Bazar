@@ -4,5 +4,11 @@
         "senha": "4321",
         "CEP": "0123654",
         "telefone": "40028922"
+    },
+    {
+        "email": "julia@gmail.com",
+        "senha": "21051",
+        "CEP": "02020202",
+        "telefone": "89898972"
     }
 ]
