@@ -11,6 +11,7 @@
 </head>
 
 <body>
+    <!-- NAVEGAÇÃO -->
     <nav>
         <div class="logo">
             <img src="../img/logo-estendida.png" alt="" class="img-logo">
@@ -23,6 +24,7 @@
         </div>
     </nav>
 
+    <!-- CARROSSEL -->
     <div class="container-carrossel">
         <div class="slides">
             <input type="radio" name="radio-btn" id="radio1">
@@ -47,6 +49,7 @@
 
         </div>
 
+        <!-- BOTÕES NAV CARROSSEL -->
         <div class="manual-navigation">
             <label for="radio1" class="manual-btn"></label>
             <label for="radio2" class="manual-btn"></label>
@@ -54,6 +57,7 @@
         </div>
     </div>
 
+    <!-- FILEIRA 1 -->
     <section class="fil1-container">
         <h2 class="section-title">estão em alta</h2>
         <p class="section-title">a turma toda tá buscando</p>
@@ -67,12 +71,16 @@
                 $dados = json_decode($conteudo, true);
 
                 if ($dados !== null && isset($dados['produtos'])) {
+
                     foreach ($dados['produtos'] as $produto) {
                         echo '<div class="product-box">';
+
                         echo '<a href="detalhesProduto.php?id_produto=' . $produto['id'] . '">';
                         echo '<img src="' . htmlspecialchars($produto['img_url']) . '" alt="' . htmlspecialchars($produto['nameProduto']) . '" class="product-img">';
                         echo '</a>';
+
                         echo '<h3 class="product-price">R$ ' . $produto['preco'] . '</h3>';
+
                         echo '<i class="bx bx-shopping-bag"></i>';
                         echo '</div>';
                     }
@@ -86,7 +94,7 @@
         </div>
     </section>
 
-    <!-- FILA 2 -->
+    <!-- FILEIRA 2 -->
     <section class="fil2-container">
         <h2 class="section-title">até R$20</h2>
         <p class="section-title">baratinhos</p>
@@ -100,13 +108,18 @@
                 $dados = json_decode($conteudo, true);
 
                 if ($dados !== null && isset($dados['produtos2'])) {
+
                     foreach ($dados['produtos2'] as $produto) {
                         echo '<div class="product-box">';
+
                         echo '<a href="detalhesProduto.php?id_produto=' . $produto['id'] . '">';
                         echo '<img src="' . htmlspecialchars($produto['img_url']) . '" alt="' . htmlspecialchars($produto['nameProduto']) . '" class="product-img">';
                         echo '</a>';
+
                         echo '<h3 class="product-price">R$ ' . $produto['preco'] . '</h3>';
+
                         echo '<i class="bx bx-shopping-bag"></i>';
+
                         echo '</div>';
                     }
                 } else {
@@ -119,10 +132,12 @@
         </div>
     </section>
 
+    <!-- FILEIRA 3 -->
     <section>
         <h1>...</h1>
     </section>
 
+    <!-- FILEIRA 4 -->
     <section class="fil4-container">
         <h2 class="section-title">tudo junino</h2>
         <p class="section-title">impossível ficar sem par na quadrilha</p>
@@ -133,13 +148,17 @@
                 $conteudo = file_get_contents($arquivo);
                 $dados = json_decode($conteudo, true);
 
-                if ($dados !== null && isset($dados['produtos3'])) { 
+                if ($dados !== null && isset($dados['produtos3'])) {
+
                     foreach ($dados['produtos3'] as $produto) {
                         echo '<div class="product-box">';
+
                         echo '<a href="detalhesProduto.php?id_produto=' . $produto['id'] . '">';
                         echo '<img src="' . htmlspecialchars($produto['img_url']) . '" alt="' . htmlspecialchars($produto['nameProduto']) . '" class="product-img">';
                         echo '</a>';
+
                         echo '<h2 class="product-name">' . htmlspecialchars($produto['nameProduto']) . '</h2>';
+
                         echo '</div>';
                     }
                 } else {

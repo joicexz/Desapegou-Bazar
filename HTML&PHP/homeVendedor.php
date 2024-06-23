@@ -29,19 +29,19 @@
 
     <!-- FEED PRODUTOS -->
     <div class="feed">
+        <!-- TITULO -->
         <div class="title">
             <h1>Seus produtos:</h1>
         </div>
 
         <div class="produtos">
 
-            <!-- BOTAO ADD-->
-
-
             <!-- FORM ADD -->
             <div id="formNovoProduto" class="overlay">
+                <!-- MODAL ADD PRODUTO -->
                 <div class="modal">
                     <span class="fechar" onclick="fecharFormulario()">&times;</span>
+                    <!-- salva os novos produtos no salvaProduto.php -->
                     <form action="salvaProduto.php" method="post">
                         <div>
                             <label for="produto">Produto:</label>
@@ -65,16 +65,20 @@
                 </div>
             </div>
 
+            <!-- BOTÃO ADD -->
             <div class="btn">
                 <button type="button" class="btn-add" onclick="mostrarFormulario()">Adicionar</button>
             </div>
 
             <?php
+
+            // arquivo json onde vai ficar salvo os produtos adicionados
             $arquivo = 'produtos.json';
             $extrair_dados = file_get_contents($arquivo);
-
             $dados = json_decode($extrair_dados, true);
+
             ?>
+            <!-- TABELA - PRODUTOS CADASTRADOS -->
             <div class="tbl">
                 <table>
                     <thead>
@@ -87,22 +91,21 @@
 
                     <tbody>
                         <?php
+                        // Itera sobre os produtos e exibe cada um na tabela
                         foreach ($dados as $id => $valor) {
-                            ?>
+                        ?>
                             <tr>
-                                <!-- <td><?= $id ?></td> -->
                                 <td><?= $valor['produto'] ?></td>
                                 <td><?= $valor['descricao'] ?></td>
                                 <td><?= $valor['preco'] ?></td>
                                 <td>
-                                    <a href="editarProduto.php?id=<?= $id ?>"><i class='bx bxs-pencil' style='color:#5e17eb'
-                                            alt="Editar"></i></a>
-
-                                    <a href="apagarProduto.php?id=<?= $id ?>"><i class='bx bx-trash-alt'
-                                            alt="Apagar"></i></a>
+                                    <!-- BOTÃO EDITAR PRODUTO -->
+                                    <a href="editarProduto.php?id=<?= $id ?>"><i class='bx bxs-pencil' style='color:#5e17eb' alt="Editar"></i></a>
+                                    <!-- BOTÃO APAGAR PRODUTO -->
+                                    <a href="apagarProduto.php?id=<?= $id ?>"><i class='bx bx-trash-alt' alt="Apagar"></i></a>
                                 </td>
                             </tr>
-                            <?php
+                        <?php
                         }
                         ?>
                     </tbody>

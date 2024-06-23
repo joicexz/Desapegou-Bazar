@@ -13,6 +13,7 @@
 
     <div class="card-login">
         <h1>LOGIN</h1>
+
         <form action="logincliente.php" method="post">
 
             <label for="email">*Email:</label>
@@ -24,7 +25,6 @@
             <button type="submit">Login</button>
         </form>
     </div>
-
 
 </body>
 

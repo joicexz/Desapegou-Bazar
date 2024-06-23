@@ -4,10 +4,12 @@ session_start();
 $data = json_decode(file_get_contents('php://input'), true);
 
 if (isset($data['id_produto'])) {
+
     $id_produto = $data['id_produto'];
     $dados = 'produtosCliente.json';
 
     if (file_exists($dados)) {
+
         $conteudo = file_get_contents($dados);
         $produto_data = json_decode($conteudo, true);
 

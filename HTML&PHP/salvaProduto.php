@@ -12,7 +12,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         if (file_exists($arquivo)) {
 
             $extrair_dados = file_get_contents($arquivo);
-
             $dados = json_decode($extrair_dados, true);
         }
 
@@ -20,7 +19,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             'produto' => $produto,
             'descricao' => $descricao,
             'preco' => $preco
-
         ];
 
         $dados[] = $novo_produto;

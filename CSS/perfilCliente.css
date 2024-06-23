@@ -11,7 +11,7 @@ body {
     height: 100vh;
     overflow-x: hidden;
     font-family: "Poppins", sans-serif;
-    grid-template-areas: "nav" "card-produto";
+    grid-template-areas: "nav" "container";
     grid-template-rows: 120px 1fr;
     display: grid;
 }
@@ -72,59 +72,48 @@ span:hover {
     border-radius: 15px;
 }
 
-/* CARD PRODUTO */
-.card-produto {
-    grid-area: card-produto;
+.container {
+    grid-area: container;
     width: 100%;
     height: 100%;
+    grid-template-areas: "foto-perfil form-dados";
+    grid-template-columns: 1fr 1fr;
+    display: grid;
 }
 
-.details {
+.foto-perfil {
+    grid-area: foto-perfil;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.foto-perfil img {
+    height: 350px;
+    width: 350px;
+}
+
+.form-dados {
+    grid-area: form-dados;
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5%;
 }
 
-.details img {
-    border-radius: 15px;
-    width: 500px;
-    height: 500px;
-}
-
-.size,
-h2 {
-    font-size: 45px;
-    font-weight: bolder;
-}
-
-.size {
-    color: #5E17EB;
-}
-
-.rest {
-    font-size: 30px;
-    color: #545454;
-    padding-bottom: 10px;
-}
-
-.btn-sacolaAdd {
-    width: 250px;
-    height: 65px;
-    border: 2px #5E17EB solid;
-    color: #5E17EB;
-    background-color: transparent;
-    font-size: 25px;
-    border-radius: 20px;
-    margin-top: 30px;
-    transition: all 0.5s;
-    cursor: pointer;
-}
-
-.btn-sacolaAdd:hover {
-    transform: scale(1.05);
+.form-dados form {
+    height: 450px;
+    width: 550px;
     background-color: #5E17EB;
-    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    border-bottom-right-radius: 80px;
+    border-top-left-radius: 80px;
+    flex-direction: column;
+    font-weight: bolder;
 }

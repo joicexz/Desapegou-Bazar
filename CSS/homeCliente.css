@@ -15,6 +15,7 @@ body {
   display: grid;
 }
 
+/* NAVEGAÇÃO */
 nav {
   grid-area: nav;
   width: 100%;
@@ -23,7 +24,6 @@ nav {
   grid-template-columns: 200px 1fr;
   display: grid;
   border-bottom: 1px #545454 solid;
-
 }
 
 .logo {
@@ -62,7 +62,6 @@ span {
   transition: 0.5s;
   border-radius: 15px;
   width: 220px;
-
 }
 
 span:hover {
@@ -72,6 +71,7 @@ span:hover {
   border-radius: 15px;
 }
 
+/* CARROSSEL */
 .container-carrossel {
   margin: 70px auto;
   width: 1020px;
@@ -170,16 +170,6 @@ span:hover {
   background-color: #5E17EB;
 }
 
-/* .produtos {
-  grid-area: produtos;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
-
-
 .fil1-container{
   font-family: "Poppins", sans-serif;
   margin: 90px auto;
@@ -195,6 +185,7 @@ i{
   margin-bottom: 1.rem;
 }
 
+/* FILEIRA 1 */
 .fil1-content{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px,auto));
@@ -216,6 +207,7 @@ i{
     transform: scale(1.05);
 }
 
+/* FILEIRA 2 */
 .fil2-container{
   font-family: "Poppins", sans-serif;
   margin: 90px auto;
@@ -232,6 +224,7 @@ i{
   grid-template-columns: repeat(auto-fit, minmax(220px,auto));
 }
 
+/* FILEIRA 4 */
 .fil4-container{
   font-family: "Poppins", sans-serif;
   margin: 90px auto;

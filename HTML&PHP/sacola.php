@@ -13,6 +13,7 @@
 </head>
 
 <body>
+    <!-- NAVEGAÇÃO -->
     <nav>
         <div class="logo">
             <img src="../img/logo-estendida.png" alt="" class="img-logo">
@@ -25,36 +26,55 @@
         </div>
     </nav>
 
+    <!-- SACOLA -->
     <div class="card-sacola">
+        <!-- TITULO -->
         <div class="tittle">
             <i class='bx bxs-shopping-bag' style='color:#5e17eb'></i>
             <p>sua sacola:</p>
         </div>
 
+        <!-- PRODUTOS SACOLA -->
         <div class="produtos_sacola">
             <?php
             if (isset($_SESSION['sacola']) && count($_SESSION['sacola']) > 0) {
                 foreach ($_SESSION['sacola'] as $index => $produto) {
+
+                    // detalhes produto
                     echo '<div class="produto">';
+
                     echo '<img src="' . htmlspecialchars($produto['img_url']) . '" alt="' . htmlspecialchars($produto['nameProduto']) . '">';
+
                     echo '<div class="div-desc">';
+
                     echo '<p>' . htmlspecialchars($produto['nameProduto']) . '</p>';
+
                     echo '<div class="textprice">';
+
                     echo '<p>R$ ' . htmlspecialchars($produto['preco']) . '</p>';
+
                     echo '</div>';
                     echo '</div>';
+
+                    // btn remover produto
                     echo '<form method="post" action="remover_produto.php">';
+
                     echo '<input type="hidden" name="index" value="' . htmlspecialchars($index) . '">';
+
                     echo '<button type="submit" class="btn-remover">Remover</button>';
+
                     echo '</form>';
                     echo '</div>';
                 }
             } else {
+                echo '<div class="produto">';
                 echo '<p>Sua sacola está vazia.</p>';
+                echo '</div>';
             }
             ?>
         </div>
 
+        <!-- BOTÃO COMPRAR -->
         <div class="btn-comprar-produto">
             <button id="btn-comprar">Comprar</button>
         </div>

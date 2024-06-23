@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <!-- NAVEGAÇÃO -->
     <nav>
         <div class="logo">
             <img src="../img/logo-estendida.png" alt="" class="img-logo">
@@ -49,12 +50,13 @@
                 if ($produto_encontrado !== null) {
         ?>
                     <div class="details">
-
                         <div>
+                            <!-- img produto -->
                             <img src="<?php echo htmlspecialchars($produto_encontrado['img_url']); ?>" alt="">
                         </div>
 
                         <div>
+                            <!-- detalhes do produto -->
                             <h2><?php echo htmlspecialchars($produto_encontrado['nameProduto']); ?></h2>
 
                             <p class="size">R$ <?php echo $produto_encontrado['preco']; ?></p>
@@ -70,7 +72,7 @@
                             <p class="rest">Estampa: <?php echo htmlspecialchars($produto_encontrado['estampa']); ?></p>
 
                             <div>
-
+                                <!-- btn add na sacola -->
                                 <button class="btn-sacolaAdd" onclick="adicionarASacola(<?php echo $produto_encontrado['id']; ?>)">adicionar a sacola</button>
                             </div>
 

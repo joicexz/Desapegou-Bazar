@@ -11,6 +11,7 @@
 
 <body>
 
+    <!-- Salva os dadps em cadastrovendedor.php -->
     <form action="cadastrovendedor.php" method="post">
         <div class="card-cadastro-vendedor">
 

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,9 @@
     <link rel="icon" href="../img/logo-icon.png">
     <title>Cadastro Cliente</title>
 </head>
+
 <body>
+    <!-- form de cadastro, dados mandados para cadastrocliente.php -->
     <form action="cadastrocliente.php" method="post">
         <div class="card-cadastro">
             <h1>Informações</h1>
@@ -28,4 +31,5 @@
         </div>
     </form>
 </body>
+
 </html>

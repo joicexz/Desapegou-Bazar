@@ -11,6 +11,7 @@
 
 <body>
     <?php
+    // pega o id do produto
     $id = $_GET['id'] ?? '';
 
     $dados = [];
@@ -26,9 +27,11 @@
         <h1>Alterar produto:</h1>
     </div>
 
+    <!-- salva em alteraProduto.php  -->
     <form action="alteraProduto.php?id=<?= $id ?>" method="post">
         <div>
             <label for="produto">Produto: </label>
+            <!-- busca pelo id do produto -->
             <input type="text" name="produto" id="produto" value="<?= $dados[$id]['produto'] ?>" required>
         </div>
 
@@ -43,6 +46,7 @@
         </div>
 
         <div>
+            <!-- botao salvar alterações -->
             <button type="submit">SALVAR</button>
         </div>
     </form>
