@@ -132,9 +132,34 @@
         </div>
     </section>
 
-    <!-- FILEIRA 3 -->
-    <section>
-        <h1>...</h1>
+    <section class="fil3-container">
+        <h2 class="sectionn-title">maiores buscas</h2>
+        <p class="sectionn-title">as marcas mais queridas</p>
+
+
+        <div class="fil3-content">
+            <!--BOX 1-->
+            <div class="product-box">
+                <a href="https://www.zara.com/br/"><img src="../img/m1.png" alt="" class="product-img"></a>
+                <h2 class="marca-name">zara</h2>
+
+            </div>
+            <!--BOX 2-->
+            <div class="product-box">
+                <a href="https://www.nike.com.br/"><img src="../img/m2.png" alt="" class="product-img"></a>
+                <h2 class="marca-name">nike</h2>
+            </div>
+            <!--BOX 3-->
+            <div class="product-box">
+                <a href="https://www.vans.com/en-us?_sr=1"><img src="../img/m3.png" alt="" class="product-img"></a>
+                <h2 class="marca-name">vans</h2>
+            </div>
+            <!--BOX 4-->
+            <div class="product-box">
+                <a href="https://www.adidas.com.br/"><img src="../img/m4.png" alt="" class="product-img"></a>
+                <h2 class="marca-name">adidas</h2>
+            </div>
+        </div>
     </section>
 
     <!-- FILEIRA 4 -->

@@ -108,12 +108,13 @@ span:hover {
     height: 450px;
     width: 550px;
     background-color: #5E17EB;
+    color: white;
     display: flex;
     justify-content: center;
-    align-items: center;
     font-size: 25px;
-    border-bottom-right-radius: 80px;
-    border-top-left-radius: 80px;
+    border-radius: 80px;
     flex-direction: column;
-    font-weight: bolder;
+    text-align: start;
+    padding: 50px;
+    font-weight: 500;
 }

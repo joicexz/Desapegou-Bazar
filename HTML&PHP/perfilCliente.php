@@ -13,7 +13,6 @@
 </head>
 
 <body>
-    <!-- NAVEGAÇÃO -->
     <nav>
         <div class="logo">
             <img src="../img/logo-estendida.png" alt="" class="img-logo">
@@ -27,12 +26,10 @@
     </nav>
 
     <div class="container">
-        <!-- foto padrão perfil -->
         <div class="foto-perfil">
             <img src="../img/perfil.png" alt="">
         </div>
 
-        <!-- form com os dados -->
         <div class="form-dados">
             <?php
             if (isset($_SESSION['cliente_index'])) {
@@ -54,9 +51,8 @@
                         } elseif ($dados_cep === null) {
                             echo "<p>Erro ao buscar dados do CEP: Problema ao acessar a API.</p>";
                         } else {
-            ?>
+                            ?>
 
-                            <!-- mostrar dados cadastrados do cliente -->
                             <form method="post">
                                 <p>Email: <?php echo $dadosCliente['email']; ?></p>
                                 <p>Senha: <?php echo $dadosCliente['senha']; ?></p>
@@ -68,7 +64,7 @@
                                 <p>CEP: <?php echo $dadosCliente['CEP']; ?></p>
                             </form>
 
-            <?php
+                            <?php
                         }
                     } else {
                         echo "<p>CEP não está disponível.</p>";

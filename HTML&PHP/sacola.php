@@ -76,7 +76,7 @@
 
         <!-- BOTÃO COMPRAR -->
         <div class="btn-comprar-produto">
-            <button id="btn-comprar">Comprar</button>
+            <button id="btn-comprar" onclick="toggle()">Comprar</button>
         </div>
     </div>
 
@@ -91,14 +91,14 @@
     </div>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             var modal = document.getElementById('myModal');
             var btnComprar = document.getElementById('btn-comprar');
             var span = document.getElementsByClassName('close')[0];
             var finalizeBtn = document.getElementById('finalize-purchase');
             var totalValue = document.getElementById('total-value');
 
-            btnComprar.onclick = function() {
+            btnComprar.onclick = function () {
                 var total = 0.00;
                 <?php
                 if (isset($_SESSION['sacola']) && count($_SESSION['sacola']) > 0) {
@@ -110,19 +110,20 @@
                 totalValue.textContent = 'R$ ' + total.toFixed(2); // Exibir o total formatado
 
                 modal.style.display = 'block'; // Exibir o modal
+
             }
 
-            span.onclick = function() {
+            span.onclick = function () {
                 modal.style.display = 'none'; // Fechar o modal
             }
 
-            window.onclick = function(event) {
+            window.onclick = function (event) {
                 if (event.target == modal) {
                     modal.style.display = 'none'; // Fechar o modal clicando fora dele
                 }
             }
 
-            finalizeBtn.onclick = function() {
+            finalizeBtn.onclick = function () {
                 window.location.href = 'finalizar_compra.php'; // Redirecionar para finalizar a compra
             }
         });

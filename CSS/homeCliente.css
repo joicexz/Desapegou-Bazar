@@ -224,6 +224,38 @@ i{
   grid-template-columns: repeat(auto-fit, minmax(220px,auto));
 }
 
+/* FILEIRA 3 */
+.fil3-container{
+  font-family: "Poppins", sans-serif;
+  margin: 90px auto;
+}
+
+.sectionn-title{
+  font-style: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.rem;
+  text-align: center;
+}
+
+.fil3-content{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px,auto));
+  display: flex;
+  flex-direction: row;
+}
+
+.fil3-content img{
+width: 340px;
+height: 340px;
+}
+
+.marca-name{
+  font-style: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.rem;
+  text-align: center;
+}
+
 /* FILEIRA 4 */
 .fil4-container{
   font-family: "Poppins", sans-serif;

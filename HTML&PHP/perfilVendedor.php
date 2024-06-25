@@ -13,7 +13,6 @@
 </head>
 
 <body>
-    <!-- NAVEGAÇÃO -->
     <nav>
         <div class="logo">
             <img src="../img/logo-estendida.png" alt="" class="img-logo">
@@ -25,14 +24,11 @@
         </div>
     </nav>
 
-    <!-- BODY -->
     <div class="container">
-        <!-- foto padrão perfil -->
         <div class="foto-perfil">
             <img src="../img/perfil.png" alt="">
         </div>
 
-        <!-- form para mostrar os dados do vendedor -->
         <div class="form-dados">
             <?php
             // Verifica se o índice do vendedor está na sessão
@@ -62,10 +58,10 @@
                         } elseif ($dados_cep === null) {
                             echo "<p>Erro ao buscar dados do CEP: Problema ao acessar a API.</p>";
                         } else {
-                            // Dados do vendedor e do CEP válidos, exibe o formulário
-            ?>
-                            <!-- dados cadastrados do vendedor -->
+                            ?>
+
                             <form method="post">
+                                <p>Nome: <?php echo $dadosVendedor['nome']; ?></p>
                                 <p>Email: <?php echo $dadosVendedor['email']; ?></p>
                                 <p>Senha: <?php echo $dadosVendedor['senha']; ?></p>
                                 <p>Localidade: <?php echo $dados_cep['localidade']; ?></p>
@@ -75,7 +71,8 @@
                                 <p>Telefone: <?php echo $dadosVendedor['telefone']; ?></p>
                                 <p>CEP: <?php echo $dadosVendedor['CEP']; ?></p>
                             </form>
-            <?php
+
+                            <?php
                         }
                     } else {
                         echo "<p>CEP não está disponível.</p>";
