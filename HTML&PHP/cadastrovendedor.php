@@ -42,7 +42,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         file_put_contents($arquivo, json_encode($dados, JSON_PRETTY_PRINT));
 
         // se tudo estiver certinho, redireciona para a página de home do vendedor
-        $url = 'homeVendedor.php';
+        $url = 'login.php';
         echo "<script type='text/javascript'>
         alert('Usuário cadastrado com sucesso');
         window.location.href = '$url';

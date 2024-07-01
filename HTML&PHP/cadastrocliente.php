@@ -34,7 +34,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         file_put_contents($arquivo, json_encode($dados, JSON_PRETTY_PRINT));
 
         // redireciona para a pag home cliente caso o cadastro dê certo
-        $url = 'homeCliente.php';
+        $url = 'login.php';
         echo "<script type='text/javascript'>
         alert('Usuário cadastrado com sucesso');
         window.location.href = '$url';
